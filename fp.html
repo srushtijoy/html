@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html class="jetpack-lazy-images-js-enabled" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="YX6tSGKaTXvTxyTPwg0ufKpYPgmVXpGnr2hVaICII50">
+<meta name="msvalidate.01" content="2633057DB01A917911F59FDC6320756B">
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Heart Disease Prediction with Machine Learning</title>
+	<meta name="description" content="In this Data Science Project I will be applying Machine Learning techniques to classify whether a person is suffering from Heart Disease or not.">
+	<link rel="canonical" href="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Heart Disease Prediction with Machine Learning">
+	<meta property="og:description" content="In this Data Science Project I will be applying Machine Learning techniques to classify whether a person is suffering from Heart Disease or not.">
+	<meta property="og:url" content="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/">
+	<meta property="og:site_name" content="Data Science | Machine Learning | Python | C++ | Coding | Programming | JavaScript">
+	<meta property="article:publisher" content="https://www.facebook.com/thecleverprogrammer">
+	<meta property="article:author" content="https://www.facebook.com/thecleverprogrammer">
+	<meta property="article:published_time" content="2020-05-20T08:50:01+00:00">
+	<meta property="article:modified_time" content="2021-06-22T09:43:22+00:00">
+	<meta property="og:image" content="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=580%2C283&amp;ssl=1">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@amankk_9">
+	<meta name="twitter:site" content="@amankk_9">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="Aman Kharwal">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="3 minutes">
+	<script src="fp_files/python.js"></script><script type="text/javascript" async="" src="fp_files/analytics.js"></script><script type="text/javascript" async="" src="fp_files/ga.js"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://thecleverprogrammer.com/#website","url":"https://thecleverprogrammer.com/","name":"Data Science | Machine Learning | Python | C++ | Coding | Programming | JavaScript","description":"Learn Python, C++, Coding, Machine Learning, Data Science, Artificial Intelligence and JavaScript.","publisher":{"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://thecleverprogrammer.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#primaryimage","inLanguage":"en-US","url":"https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=580%2C283&amp;ssl=1","contentUrl":"https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=580%2C283&amp;ssl=1"},{"@type":"WebPage","@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#webpage","url":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/","name":"Heart Disease Prediction with Machine Learning","isPartOf":{"@id":"https://thecleverprogrammer.com/#website"},"primaryImageOfPage":{"@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#primaryimage"},"datePublished":"2020-05-20T08:50:01+00:00","dateModified":"2021-06-22T09:43:22+00:00","description":"In this Data Science Project I will be applying Machine Learning techniques to classify whether a person is suffering from Heart Disease or not.","breadcrumb":{"@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/"]}]},{"@type":"BreadcrumbList","@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thecleverprogrammer.com/"},{"@type":"ListItem","position":2,"name":"All Articles","item":"https://thecleverprogrammer.com/machine-learning/"},{"@type":"ListItem","position":3,"name":"Heart Disease Prediction with Machine Learning"}]},{"@type":"Article","@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#article","isPartOf":{"@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#webpage"},"author":{"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"headline":"Heart Disease Prediction with Machine Learning","datePublished":"2020-05-20T08:50:01+00:00","dateModified":"2021-06-22T09:43:22+00:00","mainEntityOfPage":{"@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#webpage"},"wordCount":248,"commentCount":0,"publisher":{"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b"},"image":{"@id":"https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#primaryimage"},"thumbnailUrl":"https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=580%2C283&amp;ssl=1","keywords":["Healthcare","Machine Learning","Machine Learning Project"],"articleSection":["Machine Learning"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#respond"]}]},{"@type":["Person","Organization"],"@id":"https://thecleverprogrammer.com/#/schema/person/846474f6a64a2bcf3beec256fb22260b","name":"Aman Kharwal","image":{"@type":"ImageObject","@id":"https://thecleverprogrammer.com/#personlogo","inLanguage":"en-US","url":"https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/aman-removebg.png?fit=658%2C545&ssl=1","contentUrl":"https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/aman-removebg.png?fit=658%2C545&ssl=1","width":658,"height":545,"caption":"Aman Kharwal"},"logo":{"@id":"https://thecleverprogrammer.com/#personlogo"},"description":"Coder with the \u2665\ufe0f of a Writer || Data Scientist | Solopreneur | Founder","sameAs":["http://Thecleverprogrammer.com","https://www.facebook.com/thecleverprogrammer","https://www.instagram.com/aman.kharwal/","https://twitter.com/amankk_9"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://widgets.wp.com/">
+<link rel="dns-prefetch" href="https://jetpack.wordpress.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://public-api.wordpress.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com/">
+<link rel="alternate" type="application/rss+xml" title="Data Science | Machine Learning | Python | C++ | Coding | Programming | JavaScript » Feed" href="https://thecleverprogrammer.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Data Science | Machine Learning | Python | C++ | Coding | Programming | JavaScript » Comments Feed" href="https://thecleverprogrammer.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Data Science | Machine Learning | Python | C++ | Coding | Programming | JavaScript » Heart Disease Prediction with Machine Learning Comments Feed" href="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/feed/">
+<link rel="stylesheet" id="all-css-679b4d41590d535e2e4eecdca20d77c2" href="fp_files/a.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--normal: 16px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--huge: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}
+</style>
+<link rel="stylesheet" id="fontawesomepublic-css" href="fp_files/all.css" media="all">
+<link rel="stylesheet" id="fontawesomepublicv4-css" href="fp_files/v4-shims.css" media="all">
+<link rel="stylesheet" id="sab-font-css" href="fp_files/css.css" media="all">
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<script id="qubely_local_script-js-extra">
+var qubely_urls = {"plugin":"https:\/\/thecleverprogrammer.com\/wp-content\/plugins\/qubely\/","ajax":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","nonce":"5ec7122874","actual_url":"thecleverprogrammer.com"};
+</script>
+<script id="qubely_container_width-js-extra">
+var qubely_container_width = {"sm":"480","md":"690","lg":"1000","xl":"1200"};
+</script>
+<script src="fp_files/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="fp_files/a.js"></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="fp_files/js.js" id="google_gtagjs-js" async=""></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["thecleverprogrammer.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-161424785-3", {"anonymize_ip":true});
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://thecleverprogrammer.com/wp-json/"><link rel="alternate" type="application/json" href="https://thecleverprogrammer.com/wp-json/wp/v2/posts/1551"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thecleverprogrammer.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thecleverprogrammer.com/wp-includes/wlwmanifest.xml"> 
+
+<link rel="shortlink" href="https://wp.me/pbUb2D-p1">
+<link rel="alternate" type="application/json+oembed" href="https://thecleverprogrammer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://thecleverprogrammer.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F&amp;format=xml">
+<meta name="generator" content="Site Kit by Google 1.41.0"><script data-ad-client="ca-pub-4476837837997013" async="" src="fp_files/adsbygoogle.js"></script>                <!-- auto ad code generated with Simple Google Adsense plugin v1.0.6 -->
+                <script async="" src="fp_files/adsbygoogle.js"></script>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({
+                     google_ad_client: "ca-pub-4476837837997013",
+                     enable_page_level_ads: true
+                });
+                </script>      
+                <!-- / Simple Google Adsense plugin --><style type="text/css">img#wpstats{display:none}</style>
+		<noscript><link rel='stylesheet' href='https://thecleverprogrammer.com/wp-content/themes/blocksy/static/bundle/no-scripts.min.css' type='text/css' /></noscript>
+<style id="ct-main-styles-inline-css">[data-header*="type-1"] .ct-header [data-id="logo"] .site-title {--fontWeight:700;--fontSize:25px;--lineHeight:1.5;--linkInitialColor:var(--paletteColor4);} [data-header*="type-1"] .ct-header [data-id="menu"] > ul > li > a {--fontWeight:700;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.3;--linkInitialColor:var(--color);} [data-header*="type-1"] .ct-header [data-id="menu"][data-menu*="type-3"] > ul > li > a {--linkHoverColor:#ffffff;--linkActiveColor:#ffffff;} [data-header*="type-1"] .ct-header [data-id="menu"] .sub-menu {--linkInitialColor:#ffffff;--fontWeight:500;--fontSize:12px;--dropdown-divider:1px dashed rgba(255, 255, 255, 0.1);--box-shadow:0px 10px 20px rgba(41, 51, 61, 0.1);--border-radius:0px 0px 2px 2px;} [data-header*="type-1"] .ct-header [data-row*="middle"] {--height:99px;--background-image:none;--background-color:rgba(255, 255, 255, 0);--borderTop:none;--borderBottom:none;--box-shadow:none;} [data-header*="type-1"] .ct-header [data-row*="middle"] > div {--borderTop:none;--borderBottom:none;} [data-header*="type-1"] [data-id="mobile-menu"] {--fontWeight:700;--fontSize:30px;--linkInitialColor:#ffffff;} [data-header*="type-1"] #offcanvas > section {--background-image:none;--background-color:rgba(18, 21, 25, 0.98);} [data-header*="type-1"] #offcanvas {--background-image:none;--background-color:rgba(255,255,255,0);--side-panel-width:500px;} [data-header*="type-1"] [data-behaviour*="side"] {--box-shadow:0px 0px 70px rgba(0, 0, 0, 0.35);} [data-header*="type-1"] #search-modal {--linkInitialColor:#ffffff;--background-image:none;--background-color:rgba(18, 21, 25, 0.98);} [data-header*="type-1"] [data-id="trigger"] {--icon-size:19px;} [data-header*="type-1"] [data-id="trigger"] .ct-label {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-header*="type-1"] {--headerHeight:99px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--container-spacing:25px;--border:none;--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] .widget-title {--fontSize:16px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] {--background-image:none;--overlay-color:none;--background-color:transparent;} [data-footer*="type-1"] [data-id="copyright"] {--fontWeight:400;--fontSize:15px;--lineHeight:1.3;} [data-footer*="type-1"] [data-id="socials"].ct-footer-socials .ct-label {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-footer*="type-1"] [data-id="socials"].ct-footer-socials [data-color="custom"] {--background-color:rgba(218, 222, 228, 0.3);--background-hover-color:var(--paletteColor1);} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--container-spacing:30px;--border:none;--grid-template-columns:repeat(2, 1fr);} [data-footer*="type-1"] .ct-footer [data-row*="top"] .widget-title {--fontSize:16px;} [data-footer*="type-1"] .ct-footer [data-row*="top"] {--background-image:none;--overlay-color:none;--background-color:transparent;} [data-footer*="type-1"] footer.ct-footer {--background-image:none;--background-color:var(--paletteColor6);}:root {--fontFamily:Arial, Sans-Serif;--fontWeight:400;--textTransform:none;--textDecoration:none;--fontSize:22px;--lineHeight:1.65;--letterSpacing:0em;--buttonFontWeight:500;--buttonFontSize:15px;--has-classic-forms:var(--true);--has-modern-forms:var(--false);--form-field-border-initial-color:var(--border-color);--form-field-border-focus-color:var(--paletteColor1);--form-selection-control-initial-color:var(--border-color);--form-selection-control-accent-color:var(--paletteColor1);--paletteColor1:#3eaf7c;--paletteColor2:#33a370;--paletteColor3:rgba(44, 62, 80, 0.9);--paletteColor4:rgba(44, 62, 80, 1);--paletteColor5:#ffffff;--paletteColor6:#f2f5f7;--paletteColor7:#FAFBFC;--paletteColor8:#ffffff;--color:var(--paletteColor3);--linkInitialColor:var(--paletteColor1);--linkHoverColor:var(--paletteColor2);--selectionTextColor:#ffffff;--selectionBackgroundColor:var(--paletteColor1);--border-color:var(--paletteColor5);--headings-color:var(--paletteColor4);--contentSpacing:1.5em;--buttonMinHeight:40px;--buttonTextInitialColor:#ffffff;--buttonTextHoverColor:#ffffff;--buttonInitialColor:var(--paletteColor1);--buttonHoverColor:var(--paletteColor2);--button-border:none;--buttonBorderRadius:3px;--container-max-width:1290px;--content-vertical-spacing:60px;--narrow-container-max-width:750px;--wide-offset:130px;}h1 {--fontFamily:Arial, Sans-Serif;--fontWeight:700;--fontSize:40px;--lineHeight:1.5;}h2 {--fontFamily:Arial, Sans-Serif;--fontWeight:700;--fontSize:35px;--lineHeight:1.5;}h3 {--fontFamily:Arial, Sans-Serif;--fontWeight:700;--fontSize:30px;--lineHeight:1.5;}h4 {--fontFamily:Arial, Sans-Serif;--fontWeight:700;--fontSize:25px;--lineHeight:1.5;}h5 {--fontWeight:700;--fontSize:20px;--lineHeight:1.5;}h6 {--fontWeight:700;--fontSize:16px;--lineHeight:1.5;}.wp-block-quote.is-style-large p, .wp-block-pullquote p, .ct-quote-widget blockquote {--fontFamily:Arial, Sans-Serif;--fontWeight:600;--fontSize:25px;}code, kbd, samp, pre {--fontFamily:monospace, Sans-Serif;--fontWeight:400;--fontSize:16px;}.ct-sidebar .widget-title {--fontSize:18px;}.ct-breadcrumbs {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;}body {--background-image:none;--background-color:var(--paletteColor5);} [data-prefix="single_blog_post"] .entry-header .page-title {--fontSize:32px;} [data-prefix="single_blog_post"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="single_blog_post"] .hero-section[data-type="type-2"] {--alignment:center;--vertical-alignment:center;--min-height:50px;--background-image:none;--background-color:var(--paletteColor6);--container-padding:50px 0;} [data-prefix="single_blog_post"] .hero-section .entry-meta {--itemSpacing:33px;} [data-prefix="blog"] .entry-header .page-title {--fontSize:32px;} [data-prefix="blog"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="categories"] .entry-header .page-title {--fontSize:32px;} [data-prefix="categories"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="search"] .entry-header .page-title {--fontSize:32px;} [data-prefix="search"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="author"] .entry-header .page-title {--fontSize:32px;} [data-prefix="author"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="author"] .hero-section[data-type="type-2"] {--background-image:none;--background-color:var(--paletteColor6);--container-padding:50px 0;} [data-prefix="single_page"] .entry-header .page-title {--fontSize:32px;} [data-prefix="single_page"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="jetpack-portfolio_single"] .entry-header .page-title {--fontSize:32px;} [data-prefix="jetpack-portfolio_single"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="jetpack-portfolio_archive"] .entry-header .page-title {--fontSize:32px;} [data-prefix="jetpack-portfolio_archive"] .entry-header .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;--lineHeight:1.5;} [data-prefix="blog"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="blog"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="blog"] [data-cards="simple"] .entry-card {--card-border:1px solid var(--paletteColor4);} [data-prefix="blog"] .entries {--grid-columns-gap:21px;} [data-prefix="blog"] .entry-card {--horizontal-alignment:center;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(3, 1fr);} [data-prefix="categories"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="categories"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="categories"] [data-cards="boxed"] .entry-card {--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="author"] .entries {--grid-template-columns:repeat(3, 1fr);} [data-prefix="author"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="author"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="author"] [data-cards="boxed"] .entry-card {--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="search"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="search"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="search"] [data-cards="boxed"] .entry-card {--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(3, 1fr);} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-title {--fontSize:20px;--lineHeight:1.3;} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-meta {--fontWeight:600;--textTransform:uppercase;--fontSize:12px;} [data-prefix="jetpack-portfolio_archive"] [data-cards="boxed"] .entry-card {--box-shadow:0px 12px 18px -6px rgba(34, 56, 101, 0.04);}form textarea {--form-field-height:170px;} [data-sidebar] {--sidebar-width:23%;--sidebar-width-no-unit:23;--sidebar-offset:11px;}.ct-sidebar {--linkInitialColor:var(--color);--sidebar-widgets-spacing:15px;}.ct-back-to-top {--icon-color:#ffffff;--icon-hover-color:#ffffff;} [data-prefix="single_blog_post"] .ct-share-box[data-location="bottom"] {--margin:47px;} [data-prefix="single_blog_post"] .ct-share-box[data-type="type-1"] {--border:1px solid var(--border-color);} [data-prefix="single_blog_post"] .author-box {--spacing:11px;} [data-prefix="single_blog_post"] .author-box[data-type="type-2"] {--border-color:var(--paletteColor4);} [data-prefix="single_blog_post"] .post-navigation {--linkInitialColor:var(--color);} [data-prefix="single_blog_post"] .ct-related-posts-container {--background-image:none;--background-color:var(--paletteColor6);} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(4, 1fr);} [data-prefix="jetpack-portfolio_single"] article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);} [data-prefix="single_blog_post"] {--background-image:none;--background-color:#ffffff;} [data-prefix="single_blog_post"] article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);} [data-prefix="single_page"] article[class*="post"] {--has-boxed:var(--false);--has-wide:var(--true);}</style>
+<style id="ct-main-styles-tablet-inline-css" media="(max-width: 999.98px)">[data-header*="type-1"] .ct-header [data-row*="middle"] {--height:70px;} [data-header*="type-1"] #offcanvas {--side-panel-width:65vw;} [data-header*="type-1"] {--headerHeight:70px;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--grid-template-columns:initial;} [data-prefix="single_blog_post"] .entry-header .page-title {--fontSize:30px;} [data-prefix="blog"] .entry-header .page-title {--fontSize:30px;} [data-prefix="categories"] .entry-header .page-title {--fontSize:30px;} [data-prefix="search"] .entry-header .page-title {--fontSize:30px;} [data-prefix="author"] .entry-header .page-title {--fontSize:30px;} [data-prefix="single_page"] .entry-header .page-title {--fontSize:30px;} [data-prefix="jetpack-portfolio_single"] .entry-header .page-title {--fontSize:30px;} [data-prefix="jetpack-portfolio_archive"] .entry-header .page-title {--fontSize:30px;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(2, 1fr);} [data-prefix="author"] .entries {--grid-template-columns:repeat(2, 1fr);} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(2, 1fr);} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(2, 1fr);}</style>
+<style id="ct-main-styles-mobile-inline-css" media="(max-width: 689.98px)">[data-header*="type-1"] [data-id="mobile-menu"] {--fontSize:20px;} [data-header*="type-1"] #offcanvas {--side-panel-width:90vw;} [data-footer*="type-1"] .ct-footer [data-row*="bottom"] > div {--container-spacing:15px;--grid-template-columns:initial;} [data-footer*="type-1"] .ct-footer [data-row*="top"] > div {--grid-template-columns:initial;} [data-prefix="single_blog_post"] .entry-header .page-title {--fontSize:25px;} [data-prefix="blog"] .entry-header .page-title {--fontSize:25px;} [data-prefix="categories"] .entry-header .page-title {--fontSize:25px;} [data-prefix="search"] .entry-header .page-title {--fontSize:25px;} [data-prefix="author"] .entry-header .page-title {--fontSize:25px;} [data-prefix="single_page"] .entry-header .page-title {--fontSize:25px;} [data-prefix="jetpack-portfolio_single"] .entry-header .page-title {--fontSize:25px;} [data-prefix="jetpack-portfolio_archive"] .entry-header .page-title {--fontSize:25px;} [data-prefix="blog"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="categories"] .entries {--grid-template-columns:repeat(1, 1fr);} [data-prefix="categories"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="author"] .entries {--grid-template-columns:repeat(1, 1fr);} [data-prefix="author"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="search"] .entry-card .entry-title {--fontSize:18px;} [data-prefix="jetpack-portfolio_archive"] .entries {--grid-template-columns:repeat(1, 1fr);} [data-prefix="jetpack-portfolio_archive"] .entry-card .entry-title {--fontSize:18px;}:root {--content-vertical-spacing:50px;} [data-prefix="single_blog_post"] .ct-related-posts {--grid-template-columns:repeat(1, 1fr);}</style>
+			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		
+<!-- Google AdSense snippet added by Site Kit -->
+<script src="fp_files/adsbygoogle_002.js" crossorigin="anonymous"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({"google_ad_client":"ca-pub-4476837837997013","enable_page_level_ads":true,"tag_partner":"site_kit"});
+</script>
+
+<!-- End Google AdSense snippet added by Site Kit -->
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap {border-color:#000000;}.saboxplugin-wrap .saboxplugin-socials {border-color:#000000;}.saboxplugin-wrap{ border-width: 0px; }.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;-ms-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color:hover,.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color svg {border-width: 1px;border-style:solid;border-radius:50%}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey {color:#000000; fill:#000000;}.saboxplugin-wrap .saboxplugin-authorname a,.saboxplugin-wrap .saboxplugin-authorname span {color:#000000;}.saboxplugin-wrap .saboxplugin-authorname {font-family:"Roboto";}.saboxplugin-wrap .saboxplugin-desc {font-family:Roboto;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:25px; line-height:32px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:10px !important; line-height:17px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:44px;height:44px;}</style><link rel="icon" href="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/cropped-thecleverprogrammer.png?fit=32%2C32&amp;ssl=1" sizes="32x32">
+<link rel="icon" href="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/cropped-thecleverprogrammer.png?fit=192%2C192&amp;ssl=1" sizes="192x192">
+<link rel="apple-touch-icon" href="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/cropped-thecleverprogrammer.png?fit=180%2C180&amp;ssl=1">
+<meta name="msapplication-TileImage" content="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/04/cropped-thecleverprogrammer.png?fit=270%2C270&amp;ssl=1">
+<style type="text/css"></style><!-- Jetpack Google Analytics -->
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-161424785-3']);
+_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+			<!-- End Jetpack Google Analytics -->
+	<script charset="utf-8" src="fp_files/8.js"></script><script charset="utf-8" src="fp_files/9.js"></script><script charset="utf-8" src="fp_files/6.js"></script></head>
+
+<body class="post-template-default single single-post postid-1551 single-format-standard wp-custom-logo wp-embed-responsive qubely qubely-frontend" data-link="type-2" data-prefix="single_blog_post" data-header="type-1" data-footer="type-1" itemscope="itemscope" itemtype="https://schema.org/Blog">
+
+<a class="skip-link show-on-focus" href="#main">
+	Skip to content</a>
+
+
+<div id="main-container">
+	<header id="header" class="ct-header" data-id="type-1" itemscope="" itemtype="https://schema.org/WPHeader"><div data-device="desktop"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+	
+	</div>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<nav id="header-menu-1" class="header-menu-1" data-id="menu" data-menu="type-1" data-dropdown="type-1:simple" data-responsive="yes" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+
+	<ul id="menu-primary" class="menu"><li id="menu-item-8468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8468"><a href="https://thecleverprogrammer.com/">Thecleverprogrammer</a></li>
+<li id="menu-item-5638" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5638"><a href="https://thecleverprogrammer.com/machine-learning/">All Articles</a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://thecleverprogrammer.com/about/">About</a></li>
+</ul></nav>
+
+
+<a href="#search-modal" class="ct-header-search " aria-label="Search" data-label="left" data-id="search">
+
+	<span class="ct-label ct-hidden-sm ct-hidden-md ct-hidden-lg">Search</span>
+
+	<svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15" aria-label="Search header icon">
+		<path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path>
+	</svg>
+</a>
+</div></div></div></div></div><div data-device="mobile"><div data-row="middle" data-column-set="2"><div class="ct-container"><div data-column="start" data-placements="1"><div data-items="primary">
+<div class="site-branding" data-id="logo" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+	
+	</div>
+
+</div></div><div data-column="end" data-placements="1"><div data-items="primary">
+<a href="#offcanvas" class="ct-header-trigger" data-design="simple" data-label="right" aria-label="" data-id="trigger">
+
+	<span class="ct-label "></span>
+
+	<svg class="ct-trigger ct-icon" width="18" height="14" viewBox="0 0 18 14" aria-label="Off-canvas trigger icon" data-type="type-1">
+
+		<rect y="0.00" width="18" height="1.7" rx="1"></rect>
+		<rect y="6.15" width="18" height="1.7" rx="1"></rect>
+		<rect y="12.3" width="18" height="1.7" rx="1"></rect>
+	</svg>
+
+</a>
+</div></div></div></div></div></header>
+	<main id="main" class="site-main hfeed" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+		
+<div class="hero-section" data-type="type-2">
+	
+	<header class="entry-header ct-container-narrow">
+		<h1 class="page-title" title="Heart Disease Prediction with Machine Learning" itemprop="headline">Heart Disease Prediction with Machine Learning</h1>
+	<div class="page-description ">
+		Heart Disease Prediction with Machine Learning 	</div>
+
+	<ul class="entry-meta" data-type="icons:slash"><li class="meta-author" itemprop="name"><a href="https://thecleverprogrammer.com/author/amankharwal/" tabindex="-1" class="ct-image-container-static"><img src="fp_files/8be3cd61b437e9d5f7ad2e88f2af7c73.png" data-object-fit="~" style="height:25px" alt="Default image" width="25" height="25"></a> <svg width="13" height="13" viewBox="0 0 15 15"> <path d="M13.6,1.4c-1.9-1.9-4.9-1.9-6.8,0L2.2,6C2.1,6.1,2,6.3,2,6.5V12l-1.8,1.8c-0.3,0.3-0.3,0.7,0,1C0.3,14.9,0.5,15,0.7,15s0.3-0.1,0.5-0.2L3,13h5.5c0.2,0,0.4-0.1,0.5-0.2l2.7-2.7c0,0,0,0,0,0l1.9-1.9C15.5,6.3,15.5,3.3,13.6,1.4z M8.2,11.6H4.4l1.4-1.4h3.9L8.2,11.6z M12.6,7.2L11,8.9H7.1l3.6-3.6c0.3-0.3,0.3-0.7,0-1C10.4,4,10,4,9.7,4.3L5,9.1c0,0,0,0,0,0l-1.6,1.6V6.8l4.4-4.4c1.3-1.3,3.5-1.3,4.8,0C14,3.7,14,5.9,12.6,7.2C12.6,7.2,12.6,7.2,12.6,7.2z"></path> </svg> <a class="ct-meta-element-author" href="https://thecleverprogrammer.com/author/amankharwal/" title="Posts by Aman Kharwal" rel="author" itemprop="author">Aman Kharwal</a></li><li class="meta-date" itemprop="datePublished"><svg width="13" height="13" viewBox="0 0 15 15"> <path d="M7.5,0C3.4,0,0,3.4,0,7.5S3.4,15,7.5,15S15,11.6,15,7.5S11.6,0,7.5,0z M7.5,13.6c-3.4,0-6.1-2.8-6.1-6.1c0-3.4,2.8-6.1,6.1-6.1c3.4,0,6.1,2.8,6.1,6.1C13.6,10.9,10.9,13.6,7.5,13.6z M10.8,9.2c-0.1,0.2-0.4,0.4-0.6,0.4c-0.1,0-0.2,0-0.3-0.1L7.2,8.1C7,8,6.8,7.8,6.8,7.5V4c0-0.4,0.3-0.7,0.7-0.7S8.2,3.6,8.2,4v3.1l2.4,1.2C10.9,8.4,11,8.8,10.8,9.2z"></path> </svg><time class="ct-meta-element-date" datetime="2020-05-20T14:20:01+05:30">May 20, 2020</time></li><li class="meta-categories" data-type="simple"><svg width="13" height="13" viewBox="0 0 15 15"><path d="M14.4,1.2H0.6C0.3,1.2,0,1.5,0,1.9V5c0,0.3,0.3,0.6,0.6,0.6h0.6v7.5c0,0.3,0.3,0.6,0.6,0.6h11.2c0.3,0,0.6-0.3,0.6-0.6V5.6h0.6C14.7,5.6,15,5.3,15,5V1.9C15,1.5,14.7,1.2,14.4,1.2z M12.5,12.5h-10V5.6h10V12.5z M13.8,4.4H1.2V2.5h12.5V4.4z M5.6,7.5c0-0.3,0.3-0.6,0.6-0.6h2.5c0.3,0,0.6,0.3,0.6,0.6S9.1,8.1,8.8,8.1H6.2C5.9,8.1,5.6,7.8,5.6,7.5z"></path></svg><a href="https://thecleverprogrammer.com/category/by-aman-kharwal/" rel="tag" class="ct-term-698378106">Machine Learning</a></li></ul>	</header>
+</div>
+
+
+
+	<div class="ct-container" data-sidebar="right" data-vertical-spacing="top:bottom">
+
+		
+		
+	<article id="post-1551" class="post-1551 post type-post status-publish format-standard hentry category-by-aman-kharwal tag-healthcare tag-machine-learning tag-machine-learning-project">
+
+		
+		
+		
+		<div class="entry-content">
+			
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img data-attachment-id="1567" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-57/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=1581%2C771&amp;ssl=1" data-orig-size="1581,771" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-57" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=300%2C146&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=1024%2C499&amp;ssl=1" loading="eager" src="fp_files/Untitled-57.png" alt="" class="wp-image-1567 jetpack-lazy-image jetpack-lazy-image--handled" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?w=1581&amp;ssl=1 1581w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=300%2C146&amp;ssl=1 300w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1024%2C499&amp;ssl=1 1024w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=768%2C375&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1536%2C749&amp;ssl=1 1536w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1200%2C585&amp;ssl=1 1200w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=600%2C293&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 472px) 100vw, 472px" width="472" height="230"><noscript><img data-attachment-id="1567" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-57/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=1581%2C771&amp;ssl=1" data-orig-size="1581,771" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-57" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=300%2C146&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=1024%2C499&amp;ssl=1" loading="lazy" src="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?fit=580%2C283&amp;ssl=1" alt="" class="wp-image-1567" width="472" height="230" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?w=1581&amp;ssl=1 1581w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=300%2C146&amp;ssl=1 300w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1024%2C499&amp;ssl=1 1024w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=768%2C375&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1536%2C749&amp;ssl=1 1536w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=1200%2C585&amp;ssl=1 1200w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-57.png?resize=600%2C293&amp;ssl=1 600w" sizes="(max-width: 472px) 100vw, 472px" /></noscript></figure></div>
+
+
+
+<p><strong>Heart disease</strong>&nbsp;describes a range of conditions 
+that affect your heart. Diseases under the heart disease umbrella 
+include blood vessel diseases, such as coronary artery disease, heart 
+rhythm problems (arrhythmia) and heart defects you’re born with 
+(congenital heart defects), among others.</p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<script async="" src="fp_files/adsbygoogle.js"></script>
+<!-- new articles -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4476837837997013" data-ad-slot="4629281049" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+
+<p>Heart disease is one of the biggest causes of morbidity and mortality
+ among the population of the world. Prediction of cardiovascular disease
+ is regarded as one of the most important subjects in the section of 
+clinical data science. The amount of data in the healthcare industry is 
+huge.</p>
+
+
+
+<p>In this Data Science Project I will be applying <strong>Machine Learning techniques</strong> to classify whether a person is suffering from Heart Disease or not.</p>
+
+
+
+<h3>You can download the data set we need for this project from here:</h3>
+
+
+
+<div class="wp-block-file"><a href="https://thecleverprogrammer.com/wp-content/uploads/2020/05/heart.csv">heart</a><a href="https://thecleverprogrammer.com/wp-content/uploads/2020/05/heart.csv" class="wp-block-file__button" download="">Download</a></div>
+
+
+
+<p><strong>Importing the required modules</strong> :</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="0"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-0" style="display: none;">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+import seaborn as sns
+import warnings
+warnings.filterwarnings('ignore')</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 262px; min-width: 436px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">numpy</span> <span class="cm-keyword">as</span> <span class="cm-variable">np</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">pandas</span> <span class="cm-keyword">as</span> <span class="cm-variable">pd</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">matplotlib</span>.<span class="cm-property">pyplot</span> <span class="cm-keyword">as</span> <span class="cm-variable">plt</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">matplotlib</span> <span class="cm-keyword">import</span> <span class="cm-variable">rcParams</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">seaborn</span> <span class="cm-keyword">as</span> <span class="cm-variable">sns</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">warnings</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">warnings</span>.<span class="cm-property">filterwarnings</span>(<span class="cm-string">'ignore'</span>)</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 262px;"></div><div class="CodeMirror-gutters" style="display: none; height: 278px;"></div></div></div></div>
+
+
+
+<p><strong>Here we will be experimenting using KNeighborsClassifier</strong> :</p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<script async="" src="fp_files/adsbygoogle.js"></script>
+<!-- new articles -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4476837837997013" data-ad-slot="4629281049" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="1"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-1" style="display: none;">from sklearn.neighbors import KNeighborsClassifier</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 44px; min-width: 657px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">sklearn</span>.<span class="cm-property">neighbors</span> <span class="cm-keyword">import</span> <span class="cm-variable">KNeighborsClassifier</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></div>
+
+
+
+<h3>Now let’s dive into the data</h3>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="2"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-2" style="display: none;">df = pd.read_csv('dataset.csv')
+print(df.head())</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 81px; min-width: 410px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">df</span> <span class="cm-operator">=</span> <span class="cm-variable">pd</span>.<span class="cm-property">read_csv</span>(<span class="cm-string">'dataset.csv'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-builtin">print</span>(<span class="cm-variable">df</span>.<span class="cm-property">head</span>())</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 97px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1556" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-54/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=1107%2C300&amp;ssl=1" data-orig-size="1107,300" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-54" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=300%2C81&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=1024%2C278&amp;ssl=1" loading="eager" src="fp_files/Untitled-54.png" alt="" class="wp-image-1556 jetpack-lazy-image jetpack-lazy-image--handled" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?w=1107&amp;ssl=1 1107w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=300%2C81&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=1024%2C278&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=768%2C208&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=600%2C163&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 695px) 100vw, 695px" width="695" height="188"><noscript><img data-attachment-id="1556" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-54/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=1107%2C300&amp;ssl=1" data-orig-size="1107,300" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-54" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=300%2C81&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=1024%2C278&amp;ssl=1" loading="lazy" src="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?fit=580%2C157&amp;ssl=1" alt="" class="wp-image-1556" width="695" height="188" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?w=1107&amp;ssl=1 1107w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=300%2C81&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=1024%2C278&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=768%2C208&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-54.png?resize=600%2C163&amp;ssl=1 600w" sizes="(max-width: 695px) 100vw, 695px" /></noscript></figure>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="3"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-3" style="display: none;">print(df.info())</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 44px; min-width: 215px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-builtin">print</span>(<span class="cm-variable">df</span>.<span class="cm-property">info</span>())</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></div>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="4"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-4" style="display: none;">Output
+&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 303 entries, 0 to 302
+Data columns (total 14 columns):
+age         303 non-null int64
+sex         303 non-null int64
+cp          303 non-null int64
+trestbps    303 non-null int64
+chol        303 non-null int64
+fbs         303 non-null int64
+restecg     303 non-null int64
+thalach     303 non-null int64
+exang       303 non-null int64
+oldpeak     303 non-null float64
+slope       303 non-null int64
+ca          303 non-null int64
+thal        303 non-null int64
+target      303 non-null int64
+dtypes: float64(1), int64(13)
+memory usage: 33.2 KB</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none; bottom: 0px;"><div style="height: 229.548px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 734px; min-width: 488px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">Output</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-operator">&lt;</span><span class="cm-keyword">class</span> <span class="cm-string">'pandas.core.frame.DataFrame'</span><span class="cm-operator">&gt;</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">RangeIndex</span>: <span class="cm-number">303</span> <span class="cm-variable">entries</span>, <span class="cm-number">0</span> <span class="cm-variable">to</span> <span class="cm-number">302</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">Data</span> <span class="cm-variable">columns</span> (<span class="cm-variable">total</span> <span class="cm-number">14</span> <span class="cm-variable">columns</span>):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">age</span>         <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">sex</span>         <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">cp</span>          <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">trestbps</span>    <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">chol</span>        <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">fbs</span>         <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">restecg</span>     <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">thalach</span>     <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">exang</span>       <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">oldpeak</span>     <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">float64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">slope</span>       <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">ca</span>          <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">thal</span>        <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">target</span>      <span class="cm-number">303</span> <span class="cm-variable">non</span><span class="cm-operator">-</span><span class="cm-variable">null</span> <span class="cm-variable">int64</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">dtypes</span>: <span class="cm-variable">float64</span>(<span class="cm-number">1</span>), <span class="cm-variable">int64</span>(<span class="cm-number">13</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">memory</span> <span class="cm-variable">usage</span>: <span class="cm-number">33.2</span> <span class="cm-variable">KB</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 734px;"></div><div class="CodeMirror-gutters" style="display: none; height: 750px;"></div></div></div></div>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="5"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-5" style="display: none;">print(df.describe())</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 44px; min-width: 267px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-builtin">print</span>(<span class="cm-variable">df</span>.<span class="cm-property">describe</span>())</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 44px;"></div><div class="CodeMirror-gutters" style="display: none; height: 60px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1558" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-55/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=1675%2C413&amp;ssl=1" data-orig-size="1675,413" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-55" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=300%2C74&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=1024%2C252&amp;ssl=1" loading="eager" src="fp_files/Untitled-55.png" alt="" class="wp-image-1558 jetpack-lazy-image jetpack-lazy-image--handled" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?w=1675&amp;ssl=1 1675w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=300%2C74&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1024%2C252&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=768%2C189&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1536%2C379&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1200%2C296&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=600%2C148&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 786px) 100vw, 786px" width="786" height="194"><noscript><img data-attachment-id="1558" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-55/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=1675%2C413&amp;ssl=1" data-orig-size="1675,413" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-55" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=300%2C74&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=1024%2C252&amp;ssl=1" loading="lazy" src="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?fit=580%2C143&amp;ssl=1" alt="" class="wp-image-1558" width="786" height="194" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?w=1675&amp;ssl=1 1675w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=300%2C74&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1024%2C252&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=768%2C189&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1536%2C379&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=1200%2C296&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-55.png?resize=600%2C148&amp;ssl=1 600w" sizes="(max-width: 786px) 100vw, 786px" /></noscript></figure>
+
+
+
+<h3>Feature Selection</h3>
+
+
+
+<p><strong>To get correlation of each feature in the data set</strong></p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="6"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-6" style="display: none;">import seaborn as sns
+corrmat = df.corr()
+top_corr_features = corrmat.index
+plt.figure(figsize=(16,16))
+#plot heat map
+g=sns.heatmap(df[top_corr_features].corr(),annot=True,cmap="RdYlGn")
+plt.show()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 262px; min-width: 891px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">import</span> <span class="cm-variable">seaborn</span> <span class="cm-keyword">as</span> <span class="cm-variable">sns</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">corrmat</span> <span class="cm-operator">=</span> <span class="cm-variable">df</span>.<span class="cm-property">corr</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">top_corr_features</span> <span class="cm-operator">=</span> <span class="cm-variable">corrmat</span>.<span class="cm-property">index</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">figure</span>(<span class="cm-variable">figsize</span><span class="cm-operator">=</span>(<span class="cm-number">16</span>,<span class="cm-number">16</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-comment">#plot heat map</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">g</span><span class="cm-operator">=</span><span class="cm-variable">sns</span>.<span class="cm-property">heatmap</span>(<span class="cm-variable">df</span>[<span class="cm-variable">top_corr_features</span>].<span class="cm-property">corr</span>(),<span class="cm-variable">annot</span><span class="cm-operator">=</span><span class="cm-keyword">True</span>,<span class="cm-variable">cmap</span><span class="cm-operator">=</span><span class="cm-string">"RdYlGn"</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">show</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 262px;"></div><div class="CodeMirror-gutters" style="display: none; height: 278px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1559" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-3/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=865%2C905&amp;ssl=1" data-orig-size="865,905" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-3" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=287%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=865%2C905&amp;ssl=1" loading="eager" src="fp_files/download-3.png" alt="" class="wp-image-1559 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?w=865&amp;ssl=1 865w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=287%2C300&amp;ssl=1 287w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=768%2C804&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=600%2C628&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 843px) 100vw, 843px" width="843" height="882"><noscript><img data-attachment-id="1559" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-3/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=865%2C905&amp;ssl=1" data-orig-size="865,905" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-3" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=287%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?fit=865%2C905&amp;ssl=1" loading="lazy" src="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=843%2C882&#038;ssl=1" alt="" class="wp-image-1559" width="843" height="882" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?w=865&amp;ssl=1 865w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=287%2C300&amp;ssl=1 287w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=768%2C804&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-3.png?resize=600%2C628&amp;ssl=1 600w" sizes="(max-width: 843px) 100vw, 843px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<p>It’s always a good practice to work with a data set where the target 
+classes are of approximately equal size. Thus, let’s check for the same :</p>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="7"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-7" style="display: none;">sns.set_style('whitegrid')
+sns.countplot(x='target',data=df,palette='RdBu_r')
+plt.show()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 117px; min-width: 657px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">sns</span>.<span class="cm-property">set_style</span>(<span class="cm-string">'whitegrid'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">sns</span>.<span class="cm-property">countplot</span>(<span class="cm-variable">x</span><span class="cm-operator">=</span><span class="cm-string">'target'</span>,<span class="cm-variable">data</span><span class="cm-operator">=</span><span class="cm-variable">df</span>,<span class="cm-variable">palette</span><span class="cm-operator">=</span><span class="cm-string">'RdBu_r'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">show</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 117px;"></div><div class="CodeMirror-gutters" style="display: none; height: 133px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1561" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-4/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=389%2C262&amp;ssl=1" data-orig-size="389,262" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-4" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=300%2C202&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=389%2C262&amp;ssl=1" loading="eager" src="fp_files/download-4.png" alt="" class="wp-image-1561 jetpack-lazy-image jetpack-lazy-image--handled" data-recalc-dims="1" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?w=389&amp;ssl=1 389w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?resize=300%2C202&amp;ssl=1 300w" data-lazy-loaded="1" sizes="(max-width: 546px) 100vw, 546px" width="546" height="368"><noscript><img data-attachment-id="1561" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-4/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=389%2C262&amp;ssl=1" data-orig-size="389,262" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-4" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=300%2C202&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?fit=389%2C262&amp;ssl=1" loading="lazy" src="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?resize=546%2C368&#038;ssl=1" alt="" class="wp-image-1561" width="546" height="368" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?w=389&amp;ssl=1 389w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-4.png?resize=300%2C202&amp;ssl=1 300w" sizes="(max-width: 546px) 100vw, 546px" data-recalc-dims="1" /></noscript></figure>
+
+
+
+<h2>Data Processing</h2>
+
+
+
+<p>After exploring the data set, I observed that I need to convert some 
+categorical variables into dummy variables and scale all the values 
+before training the Machine Learning models. </p>
+
+
+
+<p>First, I’ll use the&nbsp;<code>get_dummies</code>&nbsp;method to create dummy columns for categorical variables.</p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<script async="" src="fp_files/adsbygoogle.js"></script>
+<!-- new articles -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4476837837997013" data-ad-slot="4629281049" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="8"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-8" style="display: none;">dataset = pd.get_dummies(df, columns = ['sex', 'cp', 
+                                        'fbs','restecg', 
+                                        'exang', 'slope', 
+                                        'ca', 'thal'])
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+standardScaler = StandardScaler()
+columns_to_scale = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+dataset[columns_to_scale] = standardScaler.fit_transform(dataset[columns_to_scale])
+dataset.head()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: block; right: 0px; left: 0px;"><div style="width: 812.025px; left: 0px;"></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 371px; min-width: 1086px; padding-right: 0px; padding-bottom: 8px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">dataset</span> <span class="cm-operator">=</span> <span class="cm-variable">pd</span>.<span class="cm-property">get_dummies</span>(<span class="cm-variable">df</span>, <span class="cm-variable">columns</span> <span class="cm-operator">=</span> [<span class="cm-string">'sex'</span>, <span class="cm-string">'cp'</span>, </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">                                        <span class="cm-string">'fbs'</span>,<span class="cm-string">'restecg'</span>, </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">                                        <span class="cm-string">'exang'</span>, <span class="cm-string">'slope'</span>, </span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">                                        <span class="cm-string">'ca'</span>, <span class="cm-string">'thal'</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">sklearn</span>.<span class="cm-property">model_selection</span> <span class="cm-keyword">import</span> <span class="cm-variable">train_test_split</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">sklearn</span>.<span class="cm-property">preprocessing</span> <span class="cm-keyword">import</span> <span class="cm-variable">StandardScaler</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">standardScaler</span> <span class="cm-operator">=</span> <span class="cm-variable">StandardScaler</span>()</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">columns_to_scale</span> <span class="cm-operator">=</span> [<span class="cm-string">'age'</span>, <span class="cm-string">'trestbps'</span>, <span class="cm-string">'chol'</span>, <span class="cm-string">'thalach'</span>, <span class="cm-string">'oldpeak'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">dataset</span>[<span class="cm-variable">columns_to_scale</span>] <span class="cm-operator">=</span> <span class="cm-variable">standardScaler</span>.<span class="cm-property">fit_transform</span>(<span class="cm-variable">dataset</span>[<span class="cm-variable">columns_to_scale</span>])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">dataset</span>.<span class="cm-property">head</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 8px solid transparent; top: 371px;"></div><div class="CodeMirror-gutters" style="display: none; height: 395px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1563" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-56/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=1685%2C285&amp;ssl=1" data-orig-size="1685,285" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-56" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=300%2C51&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=1024%2C173&amp;ssl=1" loading="eager" src="fp_files/Untitled-56.png" alt="" class="wp-image-1563 jetpack-lazy-image jetpack-lazy-image--handled" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?w=1685&amp;ssl=1 1685w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=300%2C51&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1024%2C173&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=768%2C130&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1536%2C260&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1200%2C203&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=600%2C101&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 738px) 100vw, 738px" width="738" height="125"><noscript><img data-attachment-id="1563" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/untitled-56/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=1685%2C285&amp;ssl=1" data-orig-size="1685,285" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Untitled-56" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=300%2C51&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=1024%2C173&amp;ssl=1" loading="lazy" src="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?fit=580%2C98&amp;ssl=1" alt="" class="wp-image-1563" width="738" height="125" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?w=1685&amp;ssl=1 1685w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=300%2C51&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1024%2C173&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=768%2C130&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1536%2C260&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=1200%2C203&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/Untitled-56.png?resize=600%2C101&amp;ssl=1 600w" sizes="(max-width: 738px) 100vw, 738px" /></noscript></figure>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="9"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-9" style="display: none;">y = dataset['target']
+X = dataset.drop(['target'], axis = 1)</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 81px; min-width: 501px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">y</span> <span class="cm-operator">=</span> <span class="cm-variable">dataset</span>[<span class="cm-string">'target'</span>]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">X</span> <span class="cm-operator">=</span> <span class="cm-variable">dataset</span>.<span class="cm-property">drop</span>([<span class="cm-string">'target'</span>], <span class="cm-variable">axis</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>)</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 81px;"></div><div class="CodeMirror-gutters" style="display: none; height: 97px;"></div></div></div></div>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="10"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-10" style="display: none;">from sklearn.model_selection import cross_val_score
+knn_scores = []
+for k in range(1,21):
+    knn_classifier = KNeighborsClassifier(n_neighbors = k)
+    score=cross_val_score(knn_classifier,X,y,cv=10)
+    knn_scores.append(score.mean())</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 226px; min-width: 761px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">sklearn</span>.<span class="cm-property">model_selection</span> <span class="cm-keyword">import</span> <span class="cm-variable">cross_val_score</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">knn_scores</span> <span class="cm-operator">=</span> []</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">for</span> <span class="cm-variable">k</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-number">1</span>,<span class="cm-number">21</span>):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-variable">knn_classifier</span> <span class="cm-operator">=</span> <span class="cm-variable">KNeighborsClassifier</span>(<span class="cm-variable">n_neighbors</span> <span class="cm-operator">=</span> <span class="cm-variable">k</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-variable">score</span><span class="cm-operator">=</span><span class="cm-variable">cross_val_score</span>(<span class="cm-variable">knn_classifier</span>,<span class="cm-variable">X</span>,<span class="cm-variable">y</span>,<span class="cm-variable">cv</span><span class="cm-operator">=</span><span class="cm-number">10</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-variable">knn_scores</span>.<span class="cm-property">append</span>(<span class="cm-variable">score</span>.<span class="cm-property">mean</span>())</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 226px;"></div><div class="CodeMirror-gutters" style="display: none; height: 242px;"></div></div></div></div>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="11"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-11" style="display: none;">plt.plot([k for k in range(1, 21)], knn_scores, color = 'red')
+for i in range(1,21):
+    plt.text(i, knn_scores[i-1], (i, knn_scores[i-1]))
+plt.xticks([i for i in range(1, 21)])
+plt.xlabel('Number of Neighbors (K)')
+plt.ylabel('Scores')
+plt.title('K Neighbors Classifier scores for different K values')
+plt.show()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 298px; min-width: 852px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">plot</span>([<span class="cm-variable">k</span> <span class="cm-keyword">for</span> <span class="cm-variable">k</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-number">1</span>, <span class="cm-number">21</span>)], <span class="cm-variable">knn_scores</span>, <span class="cm-variable">color</span> <span class="cm-operator">=</span> <span class="cm-string">'red'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-number">1</span>,<span class="cm-number">21</span>):</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-variable">plt</span>.<span class="cm-property">text</span>(<span class="cm-variable">i</span>, <span class="cm-variable">knn_scores</span>[<span class="cm-variable">i</span><span class="cm-operator">-</span><span class="cm-number">1</span>], (<span class="cm-variable">i</span>, <span class="cm-variable">knn_scores</span>[<span class="cm-variable">i</span><span class="cm-operator">-</span><span class="cm-number">1</span>]))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">xticks</span>([<span class="cm-variable">i</span> <span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-number">1</span>, <span class="cm-number">21</span>)])</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">xlabel</span>(<span class="cm-string">'Number of Neighbors (K)'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">ylabel</span>(<span class="cm-string">'Scores'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">title</span>(<span class="cm-string">'K Neighbors Classifier scores for different K values'</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">plt</span>.<span class="cm-property">show</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 298px;"></div><div class="CodeMirror-gutters" style="display: none; height: 314px;"></div></div></div></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img data-attachment-id="1564" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-5/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=1240%2C818&amp;ssl=1" data-orig-size="1240,818" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-5" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=300%2C198&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=1024%2C676&amp;ssl=1" loading="eager" src="fp_files/download-5.png" alt="" class="wp-image-1564 jetpack-lazy-image jetpack-lazy-image--handled" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?w=1240&amp;ssl=1 1240w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=300%2C198&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=1024%2C676&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=768%2C507&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=1200%2C792&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=600%2C396&amp;ssl=1 600w" data-lazy-loaded="1" sizes="(max-width: 712px) 100vw, 712px" width="712" height="470"><noscript><img data-attachment-id="1564" data-permalink="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/download-5/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=1240%2C818&amp;ssl=1" data-orig-size="1240,818" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="download-5" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=300%2C198&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=1024%2C676&amp;ssl=1" loading="lazy" src="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?fit=580%2C383&amp;ssl=1" alt="" class="wp-image-1564" width="712" height="470" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?w=1240&amp;ssl=1 1240w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=300%2C198&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=1024%2C676&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=768%2C507&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=1200%2C792&amp;ssl=1 1200w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2020/05/download-5.png?resize=600%2C396&amp;ssl=1 600w" sizes="(max-width: 712px) 100vw, 712px" /></noscript></figure>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="12"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-12" style="display: none;">knn_classifier = KNeighborsClassifier(n_neighbors = 12)
+score=cross_val_score(knn_classifier,X,y,cv=10)
+score.mean()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 117px; min-width: 722px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">knn_classifier</span> <span class="cm-operator">=</span> <span class="cm-variable">KNeighborsClassifier</span>(<span class="cm-variable">n_neighbors</span> <span class="cm-operator">=</span> <span class="cm-number">12</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">score</span><span class="cm-operator">=</span><span class="cm-variable">cross_val_score</span>(<span class="cm-variable">knn_classifier</span>,<span class="cm-variable">X</span>,<span class="cm-variable">y</span>,<span class="cm-variable">cv</span><span class="cm-operator">=</span><span class="cm-number">10</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">score</span>.<span class="cm-property">mean</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 117px;"></div><div class="CodeMirror-gutters" style="display: none; height: 133px;"></div></div></div></div>
+
+
+
+<p><strong>#Output-</strong> 0.8448387096774195</p>
+
+
+
+<h3>Random Forest Classifier</h3>
+
+
+
+<div class="wp-block-codemirror-blocks-code-block code-block" id="13"><pre class="CodeMirror" data-setting="{&quot;mode&quot;:&quot;python&quot;,&quot;mime&quot;:&quot;text/x-python&quot;,&quot;theme&quot;:&quot;default&quot;,&quot;lineNumbers&quot;:false,&quot;styleActiveLine&quot;:false,&quot;lineWrapping&quot;:false,&quot;readOnly&quot;:true,&quot;showPanel&quot;:false,&quot;language&quot;:&quot;Python&quot;,&quot;modeName&quot;:&quot;python&quot;}" id="code-block-13" style="display: none;">from sklearn.ensemble import RandomForestClassifier
+randomforest_classifier= RandomForestClassifier(n_estimators=10)
+score=cross_val_score(randomforest_classifier,X,y,cv=10)
+score.mean()</pre><div class="CodeMirror cm-s-default CodeMirror-simplescroll CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -14px; border-right-width: 16px; min-height: 153px; min-width: 839px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: currentcolor none medium;" role="presentation"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 667px; top: 0px; height: 36.3px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-keyword">from</span> <span class="cm-variable">sklearn</span>.<span class="cm-property">ensemble</span> <span class="cm-keyword">import</span> <span class="cm-variable">RandomForestClassifier</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">randomforest_classifier</span><span class="cm-operator">=</span> <span class="cm-variable">RandomForestClassifier</span>(<span class="cm-variable">n_estimators</span><span class="cm-operator">=</span><span class="cm-number">10</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">score</span><span class="cm-operator">=</span><span class="cm-variable">cross_val_score</span>(<span class="cm-variable">randomforest_classifier</span>,<span class="cm-variable">X</span>,<span class="cm-variable">y</span>,<span class="cm-variable">cv</span><span class="cm-operator">=</span><span class="cm-number">10</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-variable">score</span>.<span class="cm-property">mean</span>()</span></pre></div></div></div></div></div><div style="position: absolute; height: 16px; width: 1px; border-bottom: 0px solid transparent; top: 153px;"></div><div class="CodeMirror-gutters" style="display: none; height: 169px;"></div></div></div></div>
+
+
+
+<p><strong>#Output-</strong> <strong>0.8113978494623655</strong></p>
+
+
+
+<h3 class="has-background-color has-primary-background-color has-text-color has-background">Follow us on Instagram for all your Queries</h3>
+
+
+
+<div class="wp-container-614c037246009 wp-block-group"><div class="wp-block-group__inner-container"><div class="wp-block-coblocks-social wp-block-coblocks-social-profiles is-style-mask has-colors"><ul><li>
+					<a href="https://www.instagram.com/aman.kharwal/" class="wp-block-button__link wp-block-coblocks-social__button wp-block-coblocks-social__button--instagram     has-padding" title="Instagram" style="border-radius: 40px;">
+						<span class="wp-block-coblocks-social__icon" style="height:60px;width: 60px;"></span>
+						<span class="wp-block-coblocks-social__text">Instagram</span>
+					</a>
+				</li></ul></div></div></div>
+<!-- AI CONTENT END 1 -->
+		</div>
+
+		
+		
+					
+		<div class="ct-share-box" data-location="bottom" data-type="type-1">
+			
+			<div data-icons-type="simple">
+							
+				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F" data-network="facebook" aria-label="Facebook" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Facebook Icon">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span>				</a>
+							
+				<a href="https://twitter.com/share?url=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F&amp;text=Heart%20Disease%20Prediction%20with%20Machine%20Learning" data-network="twitter" aria-label="Twitter" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Twitter Icon">
+					<path d="M20,3.8c-0.7,0.3-1.5,0.5-2.4,0.6c0.8-0.5,1.5-1.3,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1c-0.7-0.8-1.8-1.3-3-1.3c-2.3,0-4.1,1.8-4.1,4.1c0,0.3,0,0.6,0.1,0.9C6.4,6.7,3.4,5.1,1.4,2.6C1,3.2,0.8,3.9,0.8,4.7c0,1.4,0.7,2.7,1.8,3.4C2,8.1,1.4,7.9,0.8,7.6c0,0,0,0,0,0.1c0,2,1.4,3.6,3.3,4c-0.3,0.1-0.7,0.1-1.1,0.1c-0.3,0-0.5,0-0.8-0.1c0.5,1.6,2,2.8,3.8,2.8c-1.4,1.1-3.2,1.8-5.1,1.8c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.8,6.3,1.8c7.5,0,11.7-6.3,11.7-11.7c0-0.2,0-0.4,0-0.5C18.8,5.3,19.4,4.6,20,3.8z"></path>
+				</svg>
+			</span>				</a>
+											
+				<a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F&amp;title=Heart%20Disease%20Prediction%20with%20Machine%20Learning" data-network="linkedin" aria-label="LinkedIn" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="LinkedIn Icon">
+					<path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+				</svg>
+			</span>				</a>
+																															
+				<a href="whatsapp://send?text=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F" data-network="whatsapp" aria-label="WhatsApp" rel="noopener noreferrer nofollow">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="WhatsApp Icon">
+					<path d="M10,0C4.5,0,0,4.5,0,10c0,1.9,0.5,3.6,1.4,5.1L0.1,20l5-1.3C6.5,19.5,8.2,20,10,20c5.5,0,10-4.5,10-10S15.5,0,10,0zM6.6,5.3c0.2,0,0.3,0,0.5,0c0.2,0,0.4,0,0.6,0.4c0.2,0.5,0.7,1.7,0.8,1.8c0.1,0.1,0.1,0.3,0,0.4C8.3,8.2,8.3,8.3,8.1,8.5C8,8.6,7.9,8.8,7.8,8.9C7.7,9,7.5,9.1,7.7,9.4c0.1,0.2,0.6,1.1,1.4,1.7c0.9,0.8,1.7,1.1,2,1.2c0.2,0.1,0.4,0.1,0.5-0.1c0.1-0.2,0.6-0.7,0.8-1c0.2-0.2,0.3-0.2,0.6-0.1c0.2,0.1,1.4,0.7,1.7,0.8s0.4,0.2,0.5,0.3c0.1,0.1,0.1,0.6-0.1,1.2c-0.2,0.6-1.2,1.1-1.7,1.2c-0.5,0-0.9,0.2-3-0.6c-2.5-1-4.1-3.6-4.2-3.7c-0.1-0.2-1-1.3-1-2.6c0-1.2,0.6-1.8,0.9-2.1C6.1,5.4,6.4,5.3,6.6,5.3z"></path>
+				</svg>
+			</span>				</a>
+							
+			</div>
+					</div>
+
+			
+		
+	<div class="author-box " data-type="type-2">
+		<a href="https://thecleverprogrammer.com/author/amankharwal/" class="ct-image-container"><img src="fp_files/8be3cd61b437e9d5f7ad2e88f2af7c73_002.png" data-object-fit="~" alt="Default image" width="60" height="60">
+						<svg width="18px" height="13px" viewBox="0 0 20 15">
+							<polygon points="14.5,2 13.6,2.9 17.6,6.9 0,6.9 0,8.1 17.6,8.1 13.6,12.1 14.5,13 20,7.5 "></polygon>
+						</svg>
+					<span class="ct-ratio" style="padding-bottom: 100%"></span></a>
+		<section>
+			<h5 class="author-box-name">Aman Kharwal</h5>
+
+			<div class="author-box-bio">
+				Coder with the ♥️ of a Writer || Data Scientist | Solopreneur | Founder			</div>
+
+			
+	<div class="author-box-social">
+
+					<a href="http://thecleverprogrammer.com/" target="_blank" rel="noopener noreferrer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M10 0C4.5 0 0 4.5 0 10s4.5 10 10 10 10-4.5 10-10S15.5 0 10 0zm6.9 6H14c-.4-1.8-1.4-3.6-1.4-3.6s2.8.8 4.3 3.6zM10 2s1.2 1.7 1.9 4H8.1C8.8 3.6 10 2 10 2zM2.2 12s-.6-1.8 0-4h3.4c-.3 1.8 0 4 0 4H2.2zm.9 2H6c.6 2.3 1.4 3.6 1.4 3.6C4.3 16.5 3.1 14 3.1 14zM6 6H3.1c1.6-2.8 4.3-3.6 4.3-3.6S6.4 4.2 6 6zm4 12s-1.3-1.9-1.9-4h3.8c-.6 2.1-1.9 4-1.9 4zm2.3-6H7.7s-.3-2 0-4h4.7c.3 1.8-.1 4-.1 4zm.3 5.6s1-1.8 1.4-3.6h2.9c-1.6 2.7-4.3 3.6-4.3 3.6zm1.7-5.6s.3-2.1 0-4h3.4c.6 2.2 0 4 0 4h-3.4z"></path></svg>
+			</a>
+		
+					<a href="http://amankk_9/" target="_blank" rel="noopener noreferrer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M20 3.8c-.7.3-1.5.5-2.4.6.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1-.7-.8-1.8-1.3-3-1.3-2.3 0-4.1 1.8-4.1 4.1 0 .3 0 .6.1.9-3.4-.1-6.4-1.7-8.4-4.2C1 3.2.8 3.9.8 4.7c0 1.4.7 2.7 1.8 3.4-.6 0-1.2-.2-1.8-.5v.1c0 2 1.4 3.6 3.3 4-.3.1-.7.1-1.1.1-.3 0-.5 0-.8-.1.5 1.6 2 2.8 3.8 2.8-1.4 1.1-3.2 1.8-5.1 1.8-.3 0-.7 0-1-.1 1.8 1.2 4 1.8 6.3 1.8 7.5 0 11.6-6.3 11.6-11.6v-.5c1-.6 1.6-1.3 2.2-2.1z"></path></svg>
+			</a>
+		
+					<a href="https://www.facebook.com/thecleverprogrammer" target="_blank" rel="noopener noreferrer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M15.2 7.2h-3.9V4.8c0-.7.5-1.2 1.2-1.2H15V0h-3C9.3 0 7.2 2.2 7.2 4.8v2.4H4.8v3.6h2.4V20h4.3v-9.2h3l.7-3.6z"></path></svg>
+			</a>
+		
+		
+		
+					<a href="https://www.instagram.com/aman.kharwal/" target="_blank" rel="noopener noreferrer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M13.3 10c0 1.8-1.5 3.3-3.3 3.3S6.7 11.8 6.7 10 8.2 6.7 10 6.7s3.3 1.5 3.3 3.3zm6.6-4.2v8.4c0 3.2-2.6 5.8-5.8 5.8H5.8C2.6 20 0 17.4 0 14.1V5.8C0 2.6 2.6 0 5.8 0h8.4c3.2 0 5.8 2.6 5.7 5.8zM15 10c0-2.8-2.2-5-5-5s-5 2.2-5 5 2.2 5 5 5 5-2.2 5-5zm1.6-5.8c0-.4-.4-.8-.8-.8s-.8.4-.8.8.4.8.8.8c.5 0 .8-.4.8-.8z"></path></svg>
+			</a>
+		
+		
+		
+		
+					<a href="https://amankharwal.medium.com/" target="_blank" rel="noopener noreferrer">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 20 20"><path d="M2.4 5.3c0-.2-.1-.5-.3-.7L.3 2.4v-.3H6l4.5 9.8 3.9-9.8H20v.3l-1.6 1.5c-.1.1-.2.3-.2.4v11.2c0 .2 0 .3.2.4l1.6 1.5v.3h-7.8v-.3l1.6-1.6c.2-.2.2-.2.2-.4V6.5L9.4 17.9h-.6L3.6 6.5v7.6c0 .3.1.6.3.9L6 17.6v.3H0v-.3L2.1 15c.2-.2.3-.6.3-.9V5.3z"></path></svg>
+			</a>
+		
+		
+		
+		
+		
+			</div>
+
+	
+			<span>Articles:&nbsp;1103</span>		</section>
+	</div>
+
+	
+		<nav class="post-navigation ">
+							<a href="https://thecleverprogrammer.com/2020/05/19/web-scraping-with-python/" class="nav-item-prev">
+					
+					<div class="item-content">
+						<span class="item-label">
+							Previous <span>Post</span>						</span>
+
+													<span class="item-title ct-hidden-sm">
+								Web Scraping with Python							</span>
+											</div>
+
+				</a>
+			
+							<a href="https://thecleverprogrammer.com/2020/05/20/data-science-project-movie-recommendation-system/" class="nav-item-next">
+					<div class="item-content">
+						<span class="item-label">
+							Next <span>Post</span>						</span>
+
+													<span class="item-title ct-hidden-sm">
+								Movie Recommendation System with Machine Learning							</span>
+											</div>
+
+									</a>
+			
+		</nav>
+
+	
+	</article>
+
+	
+		
+	<aside class="ct-hidden-sm ct-hidden-md" data-type="type-4" id="sidebar" itemtype="https://schema.org/WPSideBar" itemscope="itemscope" style="--scrollbar-width:14px; --has-scrollbar:1; position: sticky; top: 0px;">
+
+		
+		<div class="ct-sidebar" data-sticky="sidebar">
+			
+			<div class="ct-widget ai_widget ai-sticky-widget" id="ai_widget-2"><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<script async="" src="fp_files/adsbygoogle.js"></script>
+<!-- new articles -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4476837837997013" data-ad-slot="4629281049" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div><div class="widget_text ct-widget widget_custom_html" id="custom_html-4"><div class="textwidget entry-content custom-html-widget"><a href="https://www.buymeacoffee.com/amankharwal"><img src="fp_files/a.svg" class="jetpack-lazy-image jetpack-lazy-image--handled" data-lazy-loaded="1" loading="eager"><noscript><img src="https://img.buymeacoffee.com/button-api/?text=Donate&emoji=&slug=amankharwal&button_colour=40DCA5&font_colour=ffffff&font_family=Arial&outline_colour=000000&coffee_colour=FFDD00"></noscript></a></div></div>
+					</div>
+
+			</aside>
+
+	
+			</div>
+
+
+		<div class="ct-related-posts-container">
+		<div class="ct-container">
+	
+		<div class="ct-related-posts" data-layout="grid">
+			<h3 class="ct-block-title">
+				Recommended For You			</h3>
+
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container" href="https://thecleverprogrammer.com/2021/09/17/process-of-a-machine-learning-project/" aria-label="Process of a Machine Learning Project" tabindex="-1"><img src="fp_files/The-Complete-Process-of-a-Machine-Learning-Project.png" class="attachment-medium size-medium wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Process of a Machine Learning Project" loading="eager" data-attachment-id="15642" data-permalink="https://thecleverprogrammer.com/2021/09/17/process-of-a-machine-learning-project/the-complete-process-of-a-machine-learning-project/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?fit=1024%2C576&amp;ssl=1" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?w=1920&amp;ssl=1 1920w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?resize=300%2C169&amp;ssl=1 300w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?resize=1024%2C576&amp;ssl=1 1024w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?resize=768%2C432&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?resize=1536%2C864&amp;ssl=1 1536w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/The-Complete-Process-of-a-Machine-Learning-Project.png?resize=1200%2C675&amp;ssl=1 1200w" data-object-fit="~" itemprop="image" title="The Complete Process of a Machine Learning Project" data-lazy-loaded="1" sizes="(max-width: 300px) 100vw, 300px" width="300" height="169"><span class="ct-ratio" style="padding-bottom: 56.3%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://thecleverprogrammer.com/2021/09/17/process-of-a-machine-learning-project/" itemprop="url">Process of a Machine Learning Project</a>
+						</h3>
+					
+					<ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2021-09-17T18:35:58+05:30">September 17, 2021</time></li></ul>				</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container" href="https://thecleverprogrammer.com/2021/09/13/twitter-sentiment-analysis-using-python/" aria-label="Twitter Sentiment Analysis using Python" tabindex="-1"><img src="fp_files/Twitter-Sentiment-Analysis-using-Python.png" class="attachment-medium size-medium wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Twitter Sentiment Analysis using Python" loading="eager" data-attachment-id="15608" data-permalink="https://thecleverprogrammer.com/2021/09/13/twitter-sentiment-analysis-using-python/twitter-sentiment-analysis-using-python/" data-orig-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?fit=1024%2C576&amp;ssl=1" srcset="https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?w=1920&amp;ssl=1 1920w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?resize=300%2C169&amp;ssl=1 300w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?resize=1024%2C576&amp;ssl=1 1024w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?resize=768%2C432&amp;ssl=1 768w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?resize=1536%2C864&amp;ssl=1 1536w, https://i2.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Twitter-Sentiment-Analysis-using-Python.png?resize=1200%2C675&amp;ssl=1 1200w" data-object-fit="~" itemprop="image" title="Twitter Sentiment Analysis using Python" data-lazy-loaded="1" sizes="(max-width: 300px) 100vw, 300px" width="300" height="169"><span class="ct-ratio" style="padding-bottom: 56.3%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://thecleverprogrammer.com/2021/09/13/twitter-sentiment-analysis-using-python/" itemprop="url">Twitter Sentiment Analysis using Python</a>
+						</h3>
+					
+					<ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2021-09-13T15:47:52+05:30">September 13, 2021</time></li></ul>				</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container" href="https://thecleverprogrammer.com/2021/09/12/coding-projects-for-resume/" aria-label="Coding Projects for Resume" tabindex="-1"><img src="fp_files/Coding-Projects-for-Resume.png" class="attachment-medium size-medium wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Coding Projects for Resume" loading="eager" data-attachment-id="15597" data-permalink="https://thecleverprogrammer.com/2021/09/12/coding-projects-for-resume/coding-projects-for-resume/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?fit=1024%2C576&amp;ssl=1" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?w=1920&amp;ssl=1 1920w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?resize=300%2C169&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?resize=1024%2C576&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?resize=768%2C432&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?resize=1536%2C864&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Coding-Projects-for-Resume.png?resize=1200%2C675&amp;ssl=1 1200w" data-object-fit="~" itemprop="image" title="Coding Projects for Resume" data-lazy-loaded="1" sizes="(max-width: 300px) 100vw, 300px" width="300" height="169"><span class="ct-ratio" style="padding-bottom: 56.3%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://thecleverprogrammer.com/2021/09/12/coding-projects-for-resume/" itemprop="url">Coding Projects for Resume</a>
+						</h3>
+					
+					<ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2021-09-12T14:38:16+05:30">September 12, 2021</time></li></ul>				</article>
+							
+				<article itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+					<a class="ct-image-container" href="https://thecleverprogrammer.com/2021/09/08/apple-stock-price-prediction-with-machine-learning/" aria-label="Apple Stock Price Prediction with Machine Learning" tabindex="-1"><img src="fp_files/Apple-Stock-Price-Prediction-with-Machine-Learning.png" class="attachment-medium size-medium wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="Apple Stock Price Prediction with Machine Learning" loading="eager" data-attachment-id="15576" data-permalink="https://thecleverprogrammer.com/2021/09/08/apple-stock-price-prediction-with-machine-learning/apple-stock-price-prediction-with-machine-learning/" data-orig-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?fit=1920%2C1080&amp;ssl=1" data-orig-size="1920,1080" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?fit=300%2C169&amp;ssl=1" data-large-file="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?fit=1024%2C576&amp;ssl=1" srcset="https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?w=1920&amp;ssl=1 1920w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?resize=300%2C169&amp;ssl=1 300w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?resize=1024%2C576&amp;ssl=1 1024w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?resize=768%2C432&amp;ssl=1 768w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?resize=1536%2C864&amp;ssl=1 1536w, https://i1.wp.com/thecleverprogrammer.com/wp-content/uploads/2021/09/Apple-Stock-Price-Prediction-with-Machine-Learning.png?resize=1200%2C675&amp;ssl=1 1200w" data-object-fit="~" itemprop="image" title="Apple Stock Price Prediction with Machine Learning" data-lazy-loaded="1" sizes="(max-width: 300px) 100vw, 300px" width="300" height="169"><span class="ct-ratio" style="padding-bottom: 56.3%"></span></a>
+											<h3 class="related-entry-title" itemprop="name">
+							<a href="https://thecleverprogrammer.com/2021/09/08/apple-stock-price-prediction-with-machine-learning/" itemprop="url">Apple Stock Price Prediction with Machine Learning</a>
+						</h3>
+					
+					<ul class="entry-meta" data-type="simple:slash"><li class="meta-date" itemprop="datePublished"><time class="ct-meta-element-date" datetime="2021-09-08T17:39:37+05:30">September 8, 2021</time></li></ul>				</article>
+					</div>
+
+			</div>
+	</div>
+	
+	
+				<div class="ct-comments-container">
+			<div class="ct-container-narrow">
+		
+				
+
+<div class="ct-comments" id="comments">
+	
+	
+	
+		<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply					<small><a rel="nofollow" id="cancel-comment-reply-link" href="https://thecleverprogrammer.com/2020/05/20/heart-disease-prediction-with-machine-learning/#respond" style="display:none;">Cancel reply</a></small>
+				</h3>
+						<form id="commentform" class="comment-form">
+				<iframe title="Comment Form" src="fp_files/a.html" name="jetpack_remote_comment" style="width: 100%; height: 55px; border: 0px none;" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups" scrolling="no">
+									</iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							<input id="ak_js" name="ak_js" type="hidden" value="1632371571860"></form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="">
+
+		
+	
+</div>
+
+
+					</div>
+		</div>
+		
+		</main>
+
+	<footer class="ct-footer" data-id="type-1" itemscope="" itemtype="https://schema.org/WPFooter"><div data-row="top"><div class="ct-container"><div data-column="socials">
+<div class="ct-footer-socials" data-id="socials">
+
+	
+		<div class="ct-social-box" data-icon-size="custom" data-color="custom" data-icons-type="simple">
+			
+			
+							
+				<a href="https://www.facebook.com/thecleverprogrammer" data-network="facebook" aria-label="Facebook">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="Facebook Icon">
+					<path d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z"></path>
+				</svg>
+			</span><span class="ct-label">Facebook</span>				</a>
+							
+				<a href="https://www.instagram.com/aman.kharwal/" data-network="instagram" aria-label="Instagram">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="Instagram Icon">
+					<circle cx="10" cy="10" r="3.3"></circle>
+					<path d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"></path>
+				</svg>
+			</span><span class="ct-label">Instagram</span>				</a>
+							
+				<a href="https://medium.com/@amankharwal" data-network="medium" aria-label="Medium">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20" height="20" viewBox="0 0 20 20" aria-label="Medium Icon">
+					<path d="M2.4,5.3c0-0.2-0.1-0.5-0.3-0.7L0.3,2.4V2.1H6l4.5,9.8l3.9-9.8H20v0.3l-1.6,1.5c-0.1,0.1-0.2,0.3-0.2,0.4v11.2c0,0.2,0,0.3,0.2,0.4l1.6,1.5v0.3h-7.8v-0.3l1.6-1.6c0.2-0.2,0.2-0.2,0.2-0.4V6.5L9.4,17.9H8.8L3.6,6.5v7.6c0,0.3,0.1,0.6,0.3,0.9L6,17.6v0.3H0v-0.3L2.1,15c0.2-0.2,0.3-0.6,0.3-0.9V5.3z"></path>
+				</svg>
+			</span><span class="ct-label">Medium</span>				</a>
+							
+				<a href="https://www.linkedin.com/in/aman-kharwal-566baa146/" data-network="linkedin" aria-label="LinkedIn">
+					<span class="ct-icon-container">
+				<svg class="ct-icon" width="20px" height="20px" viewBox="0 0 20 20" aria-label="LinkedIn Icon">
+					<path d="M18.6,0H1.4C0.6,0,0,0.6,0,1.4v17.1C0,19.4,0.6,20,1.4,20h17.1c0.8,0,1.4-0.6,1.4-1.4V1.4C20,0.6,19.4,0,18.6,0z M6,17.1h-3V7.6h3L6,17.1L6,17.1zM4.6,6.3c-1,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7c0.9,0,1.7,0.8,1.7,1.7C6.3,5.5,5.5,6.3,4.6,6.3z M17.2,17.1h-3v-4.6c0-1.1,0-2.5-1.5-2.5c-1.5,0-1.8,1.2-1.8,2.5v4.7h-3V7.6h2.8v1.3h0c0.4-0.8,1.4-1.5,2.8-1.5c3,0,3.6,2,3.6,4.5V17.1z"></path>
+				</svg>
+			</span><span class="ct-label">LinkedIn</span>				</a>
+			
+			
+					</div>
+
+	</div>
+
+</div><div data-column="ghost"></div></div></div><div data-row="bottom"><div class="ct-container" data-columns-divider="md:sm"><div data-column="copyright">
+<div class="ct-footer-copyright" data-id="copyright">
+
+	<p>Copyright © Thecleverprogrammer.com 2021&nbsp;</p></div>
+</div></div></div></footer></div>
+
+<div class="ct-drawer-canvas">
+		<div id="search-modal" class="ct-panel" data-behaviour="modal">
+			<div class="ct-panel-actions">
+				<span class="ct-close-button">
+					<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+						<path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path>
+					</svg>
+				</span>
+			</div>
+
+			<div class="ct-panel-content">
+				
+
+<form role="search" method="get" class="search-form" action="https://thecleverprogrammer.com" data-live-results="thumbs">
+
+	<input type="search" class="modal-field" placeholder="Search" name="s" autocomplete="off" title="Search Input">
+
+	<button class="search-submit" aria-label="Search button">
+		<svg class="ct-icon" width="15" height="15" viewBox="0 0 15 15" aria-label="Search icon">
+			<path d="M14.8,13.7L12,11c0.9-1.2,1.5-2.6,1.5-4.2c0-3.7-3-6.8-6.8-6.8S0,3,0,6.8s3,6.8,6.8,6.8c1.6,0,3.1-0.6,4.2-1.5l2.8,2.8c0.1,0.1,0.3,0.2,0.5,0.2s0.4-0.1,0.5-0.2C15.1,14.5,15.1,14,14.8,13.7z M1.5,6.8c0-2.9,2.4-5.2,5.2-5.2S12,3.9,12,6.8S9.6,12,6.8,12S1.5,9.6,1.5,6.8z"></path>
+		</svg>
+
+		<span data-loader="circles"><span></span><span></span><span></span></span>
+	</button>
+
+	
+			<input type="hidden" name="ct_post_type" value="post:page:product:jetpack-portfolio">
+	
+</form>
+
+
+			</div>
+		</div>
+
+		<div id="offcanvas" class="ct-panel ct-header" data-behaviour="right-side"><section>
+		<div class="ct-panel-actions">
+			<span class="ct-close-button">
+				<svg class="ct-icon" width="12" height="12" viewBox="0 0 15 15">
+					<path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path>
+				</svg>
+			</span>
+		</div>
+		<div class="ct-panel-content" data-device="desktop"></div><div class="ct-panel-content" data-device="mobile">
+<nav class="mobile-menu" data-id="mobile-menu" data-type="type-1">
+	<ul id="menu-primary-1" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8468"><a href="https://thecleverprogrammer.com/">Thecleverprogrammer</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5638"><a href="https://thecleverprogrammer.com/machine-learning/">All Articles</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://thecleverprogrammer.com/about/">About</a></li>
+</ul></nav>
+</div></section></div>
+	<a href="#main-container" class="ct-back-to-top ct-hidden-sm ct-show" data-shape="square" data-alignment="right" title="Go to top" aria-label="Go to top">
+
+		<svg class="ct-icon" width="15" height="15" viewBox="0 0 20 20"><path d="M10,0L9.4,0.6L0.8,9.1l1.2,1.2l7.1-7.1V20h1.7V3.3l7.1,7.1l1.2-1.2l-8.5-8.5L10,0z"></path></svg>
+		
+	</a>
+
+	</div><!--  -->
+<script defer="defer" id="bilmur" data-provider="wordpress.com" data-service="atomic" src="fp_files/bilmur.js"></script>
+<style>.wp-container-614c037246009 .alignleft { float: left; margin-right: 2em; }.wp-container-614c037246009 .alignright { float: right; margin-left: 2em; }</style>		<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions" itemscope="" itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"></path>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea name="comment" class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea" id="jp-carousel-comment-form-comment-field" placeholder="Write a Comment..."></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field">
+															</fieldset>
+																											</div>
+													<input type="submit" name="submit" class="jp-carousel-comment-form-button" id="jp-carousel-comment-form-button-submit" value="Post Comment">
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"></path>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<link rel="stylesheet" id="all-css-05c491290156020008c4cacb85914ded" href="fp_files/a_002.css" type="text/css" media="all">
+<script id="coblocks-lightbox-js-extra">
+var coblocksLigthboxData = {"closeLabel":"Close Gallery","leftLabel":"Previous","rightLabel":"Next"};
+</script>
+<script type="text/javascript" src="fp_files/a_002.js"></script>
+<script id="codemirror-autoload-assets-js-before">
+var wpcm = {"plugin_url":"https://thecleverprogrammer.com/wp-content/plugins/wp-codemirror-block","assets":[],"panelOptions":{"showPanel":true,"languageLabel":false,"runButton":true,"fullScreenButton":false,"copyButton":false},"view":"public"}
+</script>
+<script src="fp_files/autoLoadAssets.js" id="codemirror-autoload-assets-js"></script>
+<script type="text/javascript" src="fp_files/init.js"></script><div class="CodeMirror-notice"></div>
+<script src="fp_files/intersection-observer.js" id="jetpack-lazy-images-polyfill-intersectionobserver-js"></script>
+<script id="jetpack-lazy-images-js-extra">
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+</script>
+<script src="fp_files/lazy-images.js" id="jetpack-lazy-images-js"></script>
+<script id="ct-scripts-js-extra">
+var ct_localizations = {"ajax_url":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","nonce":"efed53f3ae","public_url":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/","rest_url":"https:\/\/thecleverprogrammer.com\/wp-json\/","search_url":"https:\/\/thecleverprogrammer.com\/search\/QUERY_STRING\/","show_more_text":"Show more","more_text":"More","dynamic_js_chunks":[],"dynamic_styles":{"lazy_load":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/lazy-load.min.css","search_lazy":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/search-lazy.min.css"},"dynamic_styles_selectors":[{"selector":".ct-panel","url":"https:\/\/thecleverprogrammer.com\/wp-content\/themes\/blocksy\/static\/bundle\/off-canvas.min.css"}]};
+</script>
+<script id="jetpack-carousel-js-extra">
+var jetpackSwiperLibraryPath = {"url":"https:\/\/thecleverprogrammer.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/thecleverprogrammer.com\/wp-admin\/admin-ajax.php","nonce":"5e8f36a1d4","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/thecleverprogrammer.com\/wp-login.php?redirect_to=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+</script>
+<script type="text/javascript" src="fp_files/a_003.js"></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=175928511&postid=1551&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=10.1&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=31d82fa0b32cd9882e0d776b04a1e7b13d8adab3#parent=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=175928511&postid=1551&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=10.1&show_cookie_consent=10&has_cookie_consent=0&token_key=%3Bnormal%3B&sig=31d82fa0b32cd9882e0d776b04a1e7b13d8adab3#parent=https%3A%2F%2Fthecleverprogrammer.com%2F2020%2F05%2F20%2Fheart-disease-prediction-with-machine-learning%2F";
+					}
+				};
+
+				
+				if ( 'undefined' !== typeof addComment ) {
+					addComment._Jetpack_moveForm = addComment.moveForm;
+
+					addComment.moveForm = function ( commId, parentId, respondId, postId ) {
+						var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ),
+							cancelClick, cancel;
+
+						if ( false === returnValue ) {
+							cancel = document.getElementById( 'cancel-comment-reply-link' );
+							cancelClick = cancel.onclick;
+							cancel.onclick = function () {
+								var cancelReturn = cancelClick.call( this );
+								if ( false !== cancelReturn ) {
+									return cancelReturn;
+								}
+
+								if ( ! comm_par ) {
+									return cancelReturn;
+								}
+
+								comm_par = 0;
+
+								tellFrameNewParent();
+
+								return cancelReturn;
+							};
+						}
+
+						if ( comm_par == parentId ) {
+							return returnValue;
+						}
+
+						comm_par = parentId;
+
+						tellFrameNewParent();
+
+						return returnValue;
+					};
+				}
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "https:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								frame.style.height = event.data + 'px';
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								frame.style.height = event.data + 'px';
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+
+		<script src="fp_files/e-202138.js" defer="defer"></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.1',blog:'175928511',post:'1551',tz:'5.5',srv:'thecleverprogrammer.com'} ]);
+	_stq.push([ 'clickTrackerInit', '175928511', '1551' ]);
+</script>
+<script>
+/* <![CDATA[ */
+ai_front = {"insertion_before":"BEFORE","insertion_after":"AFTER","insertion_prepend":"PREPEND CONTENT","insertion_append":"APPEND CONTENT","insertion_replace_content":"REPLACE CONTENT","insertion_replace_element":"REPLACE ELEMENT","visible":"VISIBLE","hidden":"HIDDEN","fallback":"FALLBACK","automatically_placed":"Automatically placed by AdSense Auto ads code","cancel":"Cancel","use":"Use","add":"Add","parent":"Parent","cancel_element_selection":"Cancel element selection","select_parent_element":"Select parent element","css_selector":"CSS selector","use_current_selector":"Use current selector","element":"ELEMENT","path":"PATH","selector":"SELECTOR"};
+/* ]]> */
+function ai_run_scripts(){jQuery(document).ready(function(g){var n=function(c){var h=0,k=15,l=c(document).width();c(".ai-sticky-widget").each(function(){for(var b=c(this),m=b.width(),d=!1,a=b.parent();"BODY"!=a.prop("tagName");){if(a.hasClass("theiaStickySidebar")){d=!0;break}var e=a.parent(),f=e.width();if(f>1.2*m||f>l/2)break;a=e}d||(b=a.offset().top-b.offset().top+k,0==h?("sticky"!=a.css("position")||isNaN(parseInt(a.css("top")))||a.css("top")<b)&&a.css("position",
+"sticky").css("position","-webkit-sticky").css("top",b):a.theiaStickySidebar({additionalMarginTop:b,sidebarBehavior:"stick-to-top"}))})};"undefined"==typeof ai_sticky_sidebar_delay&&(ai_sticky_sidebar_delay=200);setTimeout(function(){n(g)},ai_sticky_sidebar_delay)});
+
+ai_js_code = true;
+}
+function ai_wait_for_jquery(){function b(f,c){var a=document.createElement("script");a.src=f;var d=document.getElementsByTagName("head")[0],e=!1;a.onload=a.onreadystatechange=function(){e||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(e=!0,c&&c(),a.onload=a.onreadystatechange=null,d.removeChild(a))};d.appendChild(a)}window.jQuery&&window.jQuery.fn?ai_run_scripts():(ai_jquery_waiting_counter++,4==ai_jquery_waiting_counter&&b("https://thecleverprogrammer.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0",function(){b("https://thecleverprogrammer.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=5.8.1",
+null)}),30>ai_jquery_waiting_counter&&setTimeout(function(){ai_wait_for_jquery()},50))}ai_jquery_waiting_counter=0;ai_wait_for_jquery();
+
+</script>
+
+
+
+<img src="fp_files/g.gif" alt=":)" id="wpstats" width="6" height="5"><link rel="stylesheet" href="fp_files/lazy-load.css"></body></html>
